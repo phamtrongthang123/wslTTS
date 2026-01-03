@@ -53,3 +53,51 @@ uv sync --extra ja --extra zh
 - The model and voice packs download on first use and are cached under `.cache/huggingface`.
 - The first English request may download the `en_core_web_sm` spaCy model (requires pip in the venv).
 - If you add new voices upstream, update `data/voices.json` accordingly.
+
+## systemd (user service)
+
+Install as a user service so it starts on login:
+
+```bash
+systemctl --user daemon-reload
+systemctl --user enable --now kokoro-web.service
+```
+
+Unit file location:
+
+```
+~/.config/systemd/user/kokoro-web.service
+```
+
+Service content:
+
+```ini
+[Unit]
+Description=Kokoro Web TTS
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ptthang/wslTTS
+Environment=PYTHONUNBUFFERED=1
+Environment=KOKORO_PORT=3003
+Environment=KOKORO_HF_HOME=/home/ptthang/wslTTS/.cache/huggingface
+ExecStart=/home/ptthang/wslTTS/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 3003
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+```
+
+Logs:
+
+```bash
+journalctl --user -u kokoro-web.service -f
+```
+
+Auto-start even without login:
+
+```bash
+loginctl enable-linger "$USER"
+```
