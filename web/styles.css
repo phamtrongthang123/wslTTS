@@ -1,0 +1,280 @@
+:root {
+  --bg: #f7f2e8;
+  --bg-2: #f3e2c7;
+  --ink: #231c15;
+  --muted: #6c5c4b;
+  --accent: #0f766e;
+  --accent-2: #f59e0b;
+  --card: #fffaf1;
+  --edge: #e2d6c3;
+  --shadow: rgba(35, 28, 21, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.2), transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(15, 118, 110, 0.18), transparent 35%),
+    linear-gradient(160deg, var(--bg), var(--bg-2));
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 24px 64px;
+  display: grid;
+  gap: 28px;
+}
+
+.hero {
+  display: grid;
+  gap: 16px;
+}
+
+.hero h1 {
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: clamp(2.6rem, 3.6vw, 3.6rem);
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.12);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  width: fit-content;
+}
+
+.panel {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid var(--edge);
+  box-shadow: 0 18px 40px var(--shadow);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+textarea,
+input,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #d6c7b2;
+  background: #fffdf8;
+  color: var(--ink);
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#speed {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+button,
+.actions a {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.25);
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(15, 118, 110, 0.3);
+  box-shadow: none;
+}
+
+.actions a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#status {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+#status.error {
+  color: #9a3412;
+}
+
+#status.ok {
+  color: #0f766e;
+}
+
+.output {
+  display: grid;
+  gap: 16px;
+}
+
+.output-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.output h2 {
+  margin: 0;
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: 1.6rem;
+}
+
+audio {
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.05s;
+}
+
+.delay-2 {
+  animation-delay: 0.15s;
+}
+
+.delay-3 {
+  animation-delay: 0.25s;
+}
+
+.delay-4 {
+  animation-delay: 0.35s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    padding: 40px 18px 56px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button,
+  .actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

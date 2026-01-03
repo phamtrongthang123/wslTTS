@@ -1,0 +1,272 @@
+[
+  {
+    "id": "af_heart",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_alloy",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_aoede",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_bella",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_jessica",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_kore",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_nicole",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_nova",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_river",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_sarah",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "af_sky",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_adam",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_echo",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_eric",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_fenrir",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_liam",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_michael",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_onyx",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_puck",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "am_santa",
+    "lang_code": "a",
+    "language": "American English"
+  },
+  {
+    "id": "bf_alice",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bf_emma",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bf_isabella",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bf_lily",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bm_daniel",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bm_fable",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bm_george",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "bm_lewis",
+    "lang_code": "b",
+    "language": "British English"
+  },
+  {
+    "id": "jf_alpha",
+    "lang_code": "j",
+    "language": "Japanese"
+  },
+  {
+    "id": "jf_gongitsune",
+    "lang_code": "j",
+    "language": "Japanese"
+  },
+  {
+    "id": "jf_nezumi",
+    "lang_code": "j",
+    "language": "Japanese"
+  },
+  {
+    "id": "jf_tebukuro",
+    "lang_code": "j",
+    "language": "Japanese"
+  },
+  {
+    "id": "jm_kumo",
+    "lang_code": "j",
+    "language": "Japanese"
+  },
+  {
+    "id": "zf_xiaobei",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zf_xiaoni",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zf_xiaoxiao",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zf_xiaoyi",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zm_yunjian",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zm_yunxi",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zm_yunxia",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "zm_yunyang",
+    "lang_code": "z",
+    "language": "Mandarin Chinese"
+  },
+  {
+    "id": "ef_dora",
+    "lang_code": "e",
+    "language": "Spanish"
+  },
+  {
+    "id": "em_alex",
+    "lang_code": "e",
+    "language": "Spanish"
+  },
+  {
+    "id": "em_santa",
+    "lang_code": "e",
+    "language": "Spanish"
+  },
+  {
+    "id": "ff_siwis",
+    "lang_code": "f",
+    "language": "French"
+  },
+  {
+    "id": "hf_alpha",
+    "lang_code": "h",
+    "language": "Hindi"
+  },
+  {
+    "id": "hf_beta",
+    "lang_code": "h",
+    "language": "Hindi"
+  },
+  {
+    "id": "hm_omega",
+    "lang_code": "h",
+    "language": "Hindi"
+  },
+  {
+    "id": "hm_psi",
+    "lang_code": "h",
+    "language": "Hindi"
+  },
+  {
+    "id": "if_sara",
+    "lang_code": "i",
+    "language": "Italian"
+  },
+  {
+    "id": "im_nicola",
+    "lang_code": "i",
+    "language": "Italian"
+  },
+  {
+    "id": "pf_dora",
+    "lang_code": "p",
+    "language": "Brazilian Portuguese"
+  },
+  {
+    "id": "pm_alex",
+    "lang_code": "p",
+    "language": "Brazilian Portuguese"
+  },
+  {
+    "id": "pm_santa",
+    "lang_code": "p",
+    "language": "Brazilian Portuguese"
+  }
+]

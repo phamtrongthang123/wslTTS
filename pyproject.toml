@@ -1,0 +1,17 @@
+[project]
+name = "kokoro-webapp"
+version = "0.1.0"
+description = "Self-hosted webapp for Kokoro-82M text-to-speech."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.111.0",
+  "uvicorn>=0.30.0",
+  "kokoro>=0.9.4",
+  "torch>=2.2.0",
+  "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+ja = ["misaki[ja]"]
+zh = ["misaki[zh]"]
